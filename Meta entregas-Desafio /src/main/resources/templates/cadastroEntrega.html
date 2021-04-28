@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html
-lang="pt-br"
-xmlns:th="http://www.thymeleaf.org"
-xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
->
+<html>
 <head>
 	
 		<script type="text/javascript">
@@ -107,6 +103,31 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 		
 	</script>
 	
+	<script type="text/javascript">
+	//-----------------------------
+	//TRATAMENTO FORMULARIO ORIGEM
+	//-----------------------------
+	
+	function validar(){
+	//chamando os campos do formulário
+	var cepOri  = document.getElementById('cepOrigem').value;
+	var cepDest = document.getElementById('cepDestino').value;
+	var ruaOri  = document.getElementById('ruaOrigem').value;
+	var ruaDest  = document.getElementById('ruaDestino').value;
+	
+	//verifica se os 2 são iguais
+	if(cepOri === cepDest){
+		alert("O CEP de origem e de destino são iguais ou o campo está vazio!\nPor favor, verifique se está correto!");
+		document.getElementById('cepDestino').value = '';
+		document.getElementById('cepOrigem').value = '';
+	}
+
+	
+	}
+   </script>
+	
+	
+	
 	<link rel="icon" type="image/png" href="https://portal.cetfaesa.com.br/midias/icone-cursos-logistica-914.png" />
 	<meta charset="UTF-8">
 	<title>Cadastro da entrega</title>
@@ -156,11 +177,6 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 
 	<div style="margin-top:100px;"><!-- Aqui dentro vai o texto -->
 	
-	
-
-	
-	
-        
               <form th:action="@{/saveEncomenda}" th:object="${encomenda}" method="post" style="margin-bottom: 50px;" name="formulario">
 			<h2 align="center">Cadastramento de Novas Encomendas</h2>
 			
@@ -213,7 +229,7 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 			
 			<div class="form-group">
 				<div align="center">
-					<button type="submit" class="btn btn-success" value="Salvar">Salvar</button>
+					<button type="submit" class="btn btn-success" onclick="validar();" value="Salvar">Salvar</button>
 					<input type="reset" class="btn btn-danger"  value="Resetar">
 					<a th:href="@{/encomendas}"><button type="button" class="btn btn-primary">Voltar</button></a>
 				</div>		
