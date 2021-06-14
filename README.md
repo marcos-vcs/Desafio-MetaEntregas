@@ -1,4 +1,4 @@
-# Meta-Entregas <img src="https://i.ibb.co/02QhfnK/logo-1-1.png" alt="Image" />{:height="36px" width="36px"}
+# Meta-Entregas <img src="https://i.ibb.co/02QhfnK/logo-1-1.png" width="75">
 
 ---
 
