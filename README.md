@@ -1,4 +1,4 @@
-# Meta-Entregas <img src="https://i.ibb.co/02QhfnK/logo-1-1.png" alt="Im" style="zoom:15%;" />
+# Meta-Entregas <img src="https://i.ibb.co/02QhfnK/logo-1-1.png" alt="Im" style="width:30px;" />
 
 ---
 
