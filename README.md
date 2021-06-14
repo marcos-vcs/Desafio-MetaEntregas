@@ -1,2 +1,16 @@
-# Desafio-MetaEntregas
- Desafio proposto pela empresa meta tecnologia, web app com spring boot no back-end, mongo atlas no banco de dados e thymeleaf com bootstrap e javascript no front-end
+# Meta-Entregas <img src="https://i.ibb.co/02QhfnK/logo-1-1.png" alt="Im" style="zoom:25%;" />
+
+---
+
+> Projeto desenvolvido com as seguintes tecnologias.
+>
+> - Spring Boot
+> - Spring Data
+> - Thymeleaf
+> - Bootstrap
+> - HTML
+> - CSS
+> - Javascript
+
+O deploy da aplicação foi feito na plataforma  [`HEROKU`](https://meta-entregas.herokuapp.com/)
+
